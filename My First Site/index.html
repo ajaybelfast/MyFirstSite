@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+		<script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
+		<script src="javascript/googleMaps.js"></script>
+		<script src="javascript/getLocation.js"></script>
+
+		<title> Ajays Play Page </title>
+	</head>
+
+	<body>
+		<div id="control">
+            <p><a href="index.html">Home</a></p>
+            <p><a href="page2.html">Donations</a></p>
+            <h2>Ajay's Play Page</h2>
+			<p>This is a play project to help learn the Google Map API's</p>
+			<p>updated again</p>
+			<p>Click button to get current location</p>
+			<button onclick="getLocation()" class="niceButton">Your location?</button>
+
+			<p id="latlong">Co-Ordinates will appear here</p>
+
+			<input type="text" id="address" name="city" placeholder="Please enter city?" autofocus>
+			
+			<button class="btn-primary" type="button" onclick="goToCity();" class="niceButton">Search</button>
+
+			<button type="button" onclick="goToLocation();" class="niceButton">Pan to Ireland</button>
+	
+			<a href="http://ajay.dx.am"><img src="Resources/mugshot.png" alt="me :)" height=100><</a>
+
+			<p>A project by <a href="http://ajay.dx.am">Ajay Sharma</a>.</p>
+		</div>
+
+		<!--an empty DIV for the map-->
+		<div id="map-canvas"></div>	
+
+	</body>
+</html>
